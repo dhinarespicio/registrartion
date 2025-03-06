@@ -1,0 +1,118 @@
+* {
+    margin-bottom: -2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.container {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    max-height: 100vh; /* Ensures the form never exceeds the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none; /* Prevents resizing */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Small screens: Adjust font sizes and spacing */
+@media (max-height: 700px) {
+    .container {
+        max-height: 90vh;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label, input, select, textarea, button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Extra small screens */
+@media (max-height: 600px) {
+    .container {
+        max-height: 85vh;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    label, input, select, textarea, button {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+
